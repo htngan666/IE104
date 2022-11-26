@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    box-shadow: 5px 5px 10px 2px #FFC3C3;
+}
+
+.navbar {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #FF5D5D;
+    font-weight: bold;
+    margin: 0px 10vw;
+    text-align: center;
+}
+
+.navbar .nav-link {
+    color: #FF8C8C;
+}
+
+.navbar .nav-link:hover {
+    color: #000;
+}
+
+/* Navbar center*/
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    padding: 0px 3em;
+}
+
+/* Navbar right*/
+
+.navbar-nav .right-nav-item {
+    padding: 2em;
+}
+
+
+/* footer */
+footer {
+    background-color: #FF5E5E;
+    color: #ffff;
+}
+
+.container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.second-container {
+    background-color: #FFE3A9;
+    color: #FF5D5D;
+}
+
+.second-container .email-title {
+    justify-content: end;
+}
+
+.second-container .email-banner {
+    font-size: 1em;
+}
+
+.second-container .email-banner p {
+    color: #767676;
+}
+
+.second-container .input-group {
+    padding-right: 20%;
+}
+
+.second-container .email-btn {
+    color: #ffff;
+    background-color: #FF5D5D;
+    border-radius: 5px;
+    font-size: 1.5em;
+    width: 3em;
+}
+
+#email-form {
+    font-size: 1.5em;
+}
+
+.content {
+    background-color: #FFF4DD;
+    padding: 10px 0;
+    padding-top: 2em;
+    margin-top: 7em;
+}
+
+/* Location */
+.content .nav-link {
+    color: #000;
+    font-weight: normal;
+}
+
+.content .nav-link:hover {
+    color: #FF8C8C;
+}
+
+/* Step */
+.content .circle-number-active {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    border: 3px solid #FF8D8D;
+    background-color: #FF8D8D;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content .circle-number {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    border: 3px solid #FF8D8D;
+    background-color: #fff;
+    color: #FF8D8D;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content .container p {
+    padding-top: 10px;
+    color: #7E7E7E;
+}
+
+/* Table main */
+.content .table-main {
+    border-radius: 1em;
+    box-shadow: 0 0 0 2px #FFC3C3;
+    overflow: hidden;
+    color: #767676;
+    text-align: center;
+}
+
+.content .table thead th {
+    background-color: #FF8D8D;
+    color: #fff;
+}
+
+.content .minus-quantity-btn {
+    width: 8%;
+    border: none;
+    background: #FF8D8D;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5em 0 0 0.5em;
+    box-shadow: 0 0 0 3px #FF8D8D;
+}
+
+.content .plus-quantity-btn {
+    width: 8%;
+    border: none;
+    background: #FF8D8D;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0 0.5em 0.5em 0;
+    box-shadow: 0 0 0 3px #FF8D8D;
+}
+
+.content .quantity-input {
+    width: 25%;
+    text-align: center;
+    margin: 0;
+    border: none;
+    box-shadow: 0 0 0 3px #FF8D8D;
+}
+
+.content .delete-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
+
+.content .delete-btn:hover {
+    color: #FFC3C3;
+}
+
+.content .coupon {
+    border-radius: 10px;
+    border: 1px solid #FF8D8D;
+    background: #fff;
+}
+
+.content .coupon-title {
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.content .coupon-title i {
+    color: #FF5D5D;
+}
+
+.content .coupon-input>* {
+    flex: auto;
+}
+
+.content .coupon-input button {
+    color: #ffff;
+    background-color: #FF8D8D;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.content .coupon-input input {
+    border-radius: 10px;
+    border: 1px solid #FF8D8D;
+}
+
+/* Table sum in table main */
+.content .table-sum {
+    /* padding: 0 8em; */
+    color: #7E7E7E;
+}
+
+.content .table-sum .table {
+    color: #7E7E7E;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.content .table-sum tfoot {
+    padding: 0 8em;
+    font-weight: bold;
+}
+
+/* Action button below table */
+.content .action-btn {
+    text-align: center;
+}
+
+.content .action-buy-btn {
+    border: 2px solid #FF8C8C;
+    background: #fff;
+    border-radius: 10px;
+    color: #FF8C8C;
+    font-weight: bold;
+    width: 70%;
+    margin: 0.5em;
+
+}
+
+.content .action-purchase-btn {
+    border: 2px solid #FF8C8C;
+    background: #FF8C8C;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 70%;
+    margin: 0.5em;
+}
+
+.content .warning-text {
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+.content .warning-text p {
+    color: #FF5D5D;
+    font-weight: bold;
+}
