@@ -51,7 +51,7 @@
 }
 
 /* Table main */
-.content .table-main {
+.content .table-borderless {
     border-radius: 1em;
     box-shadow: 0 0 0 2px #FFC3C3;
     overflow: hidden;
@@ -84,7 +84,7 @@
     box-shadow: 0 0 0 3px #FF8D8D;
 }
 
-.content .quantity-input {
+.content #quantity-input {
     width: 25%;
     text-align: center;
     margin: 0;
@@ -159,7 +159,7 @@
     text-align: center;
 }
 
-.content .action-buy-btn {
+.content #action-buy-btn {
     border: 2px solid #FF8C8C;
     background: #fff;
     border-radius: 10px;
@@ -170,7 +170,11 @@
 
 }
 
-.content .action-purchase-btn {
+.content #action-buy-btn:hover {
+    color: #000;
+}
+
+.content #action-purchase-btn {
     border: 2px solid #FF8C8C;
     background: #FF8C8C;
     border-radius: 10px;
@@ -178,6 +182,10 @@
     font-weight: bold;
     width: 70%;
     margin: 0.5em;
+}
+
+.content #action-purchase-btn:hover {
+    color: #000;
 }
 
 .content .warning-text {
@@ -188,4 +196,189 @@
 .content .warning-text p {
     color: #FF5D5D;
     font-weight: bold;
+}
+
+/*Cart buy option */
+.container .buy-option {
+    overflow: hidden;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px #FFC3C3;
+}
+
+.container .slide-controls {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 2px solid #FFC3C3;
+    border-radius: 10px;
+}
+
+.slide-controls .slide {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.slide-controls label.no-login {
+    color: #000;
+}
+
+.slide-controls .slider-tab {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    background-color: #FF8D8D;
+    background-image: linear-gradient(62deg, #FF8D8D 0%, #FF8D8D 100%);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.slide-controls input[type="radio"] {
+    display: none;
+}
+
+#no-login:checked~.slider-tab {
+    left: 50%;
+}
+
+#no-login:checked~label.no-login {
+    color: #fff;
+    cursor: default;
+    user-select: none;
+}
+
+#no-login:checked~label.login {
+    color: #FF8D8D;
+}
+
+#login:checked~label.no-login {
+    color: #FF8D8D;
+}
+
+#login:checked~label.login {
+    cursor: default;
+    user-select: none;
+}
+
+.container .form-container {
+    width: 95%;
+    margin: 1em;
+    overflow: hidden;
+}
+
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+
+.form-container .form-inner form {
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-inner form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 2px solid #FFC3C3;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.form-inner form label {
+    color: #7E7E7E;
+}
+
+.form-inner form .forgot-pass {
+    margin-top: 5px;
+}
+
+.form-inner form .no-login-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-inner form .forgot-pass a {
+    color: #FBAB7E;
+    text-decoration: none;
+}
+
+.form-inner form .btn {
+    border: 2px solid #FF8C8C;
+    background: #FF8C8C;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.content #action-complete-btn {
+    border: 2px solid #FF8C8C;
+    background: #FF8C8C;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 70%;
+    margin: 0.5em;
+    display: none;
+}
+
+.content #action-complete-btn:hover {
+    color: #000;
+}
+
+.content .table .final-sum {
+    color: #FF8D8D;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.table .purchase-method {
+    text-align: left;
+}
+
+.table .purchase-method label {
+    padding-bottom: 0.5em;
+}
+
+.content #deliverPolicyTable {
+    display: none;
+}
+
+.content #methodTable {
+    display: none;
+}
+
+/* Thank you page */
+.thank-you {
+    text-align: center;
+    padding: 3em;
+}
+
+.thank-you p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF5D5D !important;
 }

@@ -26,7 +26,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
-    <title>Giỏ hàng</title>
+    <title>Hoàn tất</title>
 </head>
 
 <body>
@@ -98,12 +98,12 @@
         <div class="container d-flex">
             <a href="#" class="nav-link me-1">Trang chủ</a>
             <span>></span>
-            <a href="#" class="nav-link ms-1">Giỏ hàng</a>
+            <a href="#" class="nav-link ms-1">Hoàn tất</a>
         </div>
         <div class="container">
             <div class="col d-flex justify-content-evenly mt-4 mb-4">
                 <div>
-                    <div class="circle-number-active m-auto">1</div>
+                    <div class="circle-number m-auto">1</div>
                     <p>Giỏ hàng</p>
                 </div>
                 <div>
@@ -111,98 +111,14 @@
                     <p>Thông tin đơn hàng</p>
                 </div>
                 <div>
-                    <div class="circle-number m-auto">3</div>
+                    <div class="circle-number-active m-auto">3</div>
                     <p>Hoàn tất</p>
                 </div>
             </div>
         </div>
-        <div class="container overflow-auto">
-            <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <th scope="col">SẢN PHẨM</th>
-                        <th scope="col">ĐƠN GIÁ</th>
-                        <th scope="col">SỐ LƯỢNG</th>
-                        <th scope="col">TỔNG CỘNG</th>
-                        <th scope="col">XÓA</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white align-middle" id="cart-table-body">
-                    <tr>
-                        <td class="d-flex justify-content-between pt-3 pb-3">
-                            <img src="/images/cake.png" alt="Cake">
-                            <p class="m-auto ps-3">Bánh kem sinh nhật vị socola</p>
-                        </td>
-                        <td>290.000đ</td>
-                        <td>
-                            <button type="button" class="minus-quantity-btn" onclick="decrementValue()">-</button>
-                            <input type="text" id="quantity-input" value="2" />
-                            <button type="button" class="plus-quantity-btn" onclick="incrementValue()">+</button>
-                        </td>
-                        <td>580.000đ</td>
-                        <td>
-                            <button type="button" class="delete-btn" id="deleteBtn" onclick="deleteItems()">
-                                <i class="bi bi-x"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="table-active">
-                        <td colspan="2" class="p-4">
-                            <div class="container coupon p-4">
-                                <p class="coupon-title">
-                                    <i class="bi bi-ticket-perforated"> </i>
-                                    <b>COUPON GIẢM GIÁ</b>
-                                </p>
-                                <div class="coupon-input d-flex justify-content-between">
-                                    <div class="form-outline">
-                                        <input type="text" id="-form" class="form-control"
-                                            placeholder="Nhập mã khuyến mãi nếu có" />
-                                    </div>
-                                    <button type="button" class="btn rounded ms-1">DÙNG</button>
-                                </div>
-                            </div>
-                        </td>
-                        <td colspan="3" class="table-sum">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Thành tiền</td>
-                                        <td>580.000đ</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Giảm giá</td>
-                                        <td>- 0đ</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot class="table-group-divider">
-                                    <tr>
-                                        <td>Thành tiền</td>
-                                        <td>580.000đ</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="container" id="row-buttons">
-            <div class="row action-btn">
-                <div class="col-sm">
-                    <a href="#">
-                        <button type="button" class="btn" id="action-buy-btn">TIẾP TỤC MUA HÀNG</button>
-                    </a>
-                </div>
-                <div class="col-sm action-purchase-col">
-                    <a href="cart-order.html">
-                        <button type="button" class="btn" id="action-purchase-btn">TIẾN HÀNH ĐẶT HÀNG</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container warning-text">
-            <p>Lưu ý: Tổng giá trị đơn hàng chưa bao gồm phí giao hàng. Nhân viên sẽ báo phí giao khi liên hệ xác
-                nhận.
-            </p>
+        <div class="container thank-you">
+            <img src="/images/ThankYou.png" alt="Thank you" class="w-25 h-25">
+            <p>Cảm ơn quý khách đã đặt hàng tại cửa hàng của chúng tôi.</p>
         </div>
     </section>
 
@@ -286,7 +202,6 @@
         </div>
         <p class="text-lg-center p-3">© 2022 All Rights Reserved Terms of Use and Privacy Policy </p>
     </footer>
-    <script src="cart-quantity.js"></script>
 </body>
 
 </html>
