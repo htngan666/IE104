@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OKEKI</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="user.css" />
+        <link rel="stylesheet" href="responsive_user.css" />
+    </head>
+    <body bgcolor="#FFFAE7">
+        <div class="container flex-column-center">
+            <div class="flex-contant flex-column-start">
+                <div class="location-link"><a href="index.html">Trang chủ</a><span> > </span><a href="#">Thông tin người dùng</a></div>
+
+                <div class="tablist flex-row-center">
+                    <button class="tablink flex-row-center active-tab" onclick="changeTab(event,'account')">
+                        <span class="material-icons"> person </span>
+                        <span>THÔNG TIN NGƯỜI DÙNG</span>
+                    </button>
+                    <button class="tablink flex-row-center" onclick="changeTab(event,'change-pass')">
+                        <span class="material-icons"> password </span>
+                        <span>ĐỔI MẬT KHẨU</span>
+                    </button>
+                    <button class="tablink flex-row-center" onclick="changeTab(event,'order')">
+                        <span class="material-icons"> price_check </span>
+                        <span>ĐƠN HÀNG</span>
+                    </button>
+                    <button class="tablink flex-row-center" onclick="changeTab(event,'logout')">
+                        <span class="material-icons"> logout </span>
+                        <span>ĐĂNG XUẤT</span>
+                    </button>
+                </div>
+            </div>
+            <div id="account" class="flex-row-start tab">
+                <div class="avatar flex-column-center">
+                    <img src="avatar.jpg" alt="avatar" />
+                    <button class="btn-main">ĐỔI AVATAR</button>
+                </div>
+                <div class="chi-tiet default grid-two">
+                    <div class="name flex-column-start">
+                        <span>Họ tên</span>
+                        <input type="text" value="Nguyễn Ngọc Luân" disabled />
+                    </div>
+                    <div class="age flex-column-start">
+                        <span>Ngày sinh</span>
+                        <input type="date" value="2002-08-30" disabled />
+                    </div>
+                    <div class="email flex-column-start">
+                        <span>Email</span>
+                        <input type="text" value="luannn308@gmail.com" disabled />
+                    </div>
+                    <div class="phone flex-column-start">
+                        <span>Số điện thoại</span>
+                        <input type="text" value="0854042308" disabled />
+                    </div>
+                    <div class="address flex-column-start grid-last-item">
+                        <span>Địa chỉ</span>
+                        <input type="text" value="43/2A Trần Hữu Trang, phường 11, Phú Nhuận" disabled />
+                    </div>
+                    <button type="submit" class="btn-main chinh-sua" value="">CHỈNH SỬA</button>
+                </div>
+                <div class="chi-tiet change grid-two hide">
+                    <div class="name flex-column-start">
+                        <span>Họ tên</span>
+                        <input type="text" value="Nguyễn Ngọc Luân" />
+                    </div>
+                    <div class="age flex-column-start">
+                        <span>Ngày sinh</span>
+                        <input type="date" value="2002-08-30" />
+                    </div>
+                    <div class="email flex-column-start">
+                        <span>Email</span>
+                        <input type="email" value="luannn308@gmail.com" />
+                    </div>
+                    <div class="phone flex-column-start">
+                        <span>Số điện thoại</span>
+                        <input type="text" value="0854042308" />
+                    </div>
+                    <div class="address flex-column-start grid-last-item">
+                        <span>Địa chỉ</span>
+                        <input type="text" value="43/2A Trần Hữu Trang, phường 11, Phú Nhuận" />
+                    </div>
+                    <button type="submit" class="btn-main cap-nhat">CẬP NHẬT</button>
+                </div>
+            </div>
+            <div id="change-pass" class="tab hide">
+                <div class="main flex-column-center">
+                    <div class="flex-column-start">
+                        <div class="flex-column-start">
+                            <span>Mật khẩu cũ</span>
+                            <div class="input-has-icon">
+                                <input type="password" value="" class="old-pass input-pass" />
+                                <span class="material-icons show-pass"> visibility_off </span>
+                            </div>
+                        </div>
+                        <div class="flex-column-start">
+                            <span>Mật khẩu mới</span>
+                            <div class="input-has-icon">
+                                <input type="password" value="" class="new-pass input-pass" />
+                                <span class="material-icons show-pass"> visibility_off </span>
+                            </div>
+                        </div>
+                        <div class="flex-column-start">
+                            <span>Xác nhận mật khẩu mới</span>
+                            <div class="input-has-icon">
+                                <input type="password" value="" class="re-new-pass input-pass" />
+                                <span class="material-icons show-pass"> visibility_off </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-main doi-mk">CẬP NHẬT</button>
+                </div>
+                <div class="otp flex-column-center hide">
+                    <div>
+                        <span>Mã OTP đã được gửi đến email: </span>
+                        <span class="span-red">luan****@gmail.com</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Nhập mã OTP" />
+                    </div>
+                    <div>
+                        <span>Mã sẽ gửi trong <span class="span-red">54s</span> nữa.</span>
+                        <a href="">Gửi lại mã?</a>
+                    </div>
+                    <button class="btn-main btn-otp">XÁC NHẬN</button>
+                </div>
+            </div>
+            <div id="order" class="tab hide">
+                <table class="table-order">
+                    <thead>
+                        <tr class="table-header">
+                            <th>MÃ ĐƠN HÀNG</th>
+                            <th>NGÀY ĐẶT</th>
+                            <th>SẢN PHẨM</th>
+                            <th>TỔNG TIỀN</th>
+                            <th>TRẠNG THÁI</th>
+                            <th>XEM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BSN01</td>
+                            <td>2022/08/20</td>
+                            <td>Bánh sinh nhật</td>
+                            <td>120.000đ</td>
+                            <td class="done">Đã giao</td>
+                            <td><a href="">Chi tiết</a></td>
+                        </tr>
+                        <tr>
+                            <td>BSN02</td>
+                            <td>2022/08/30</td>
+                            <td>Bánh sinh nhật</td>
+                            <td>120.000đ</td>
+                            <td class="waiting">Đang giao</td>
+                            <td><a href="">Chi tiết</a></td>
+                        </tr>
+                        <tr>
+                            <td>BSN03</td>
+                            <td>2022/10/31</td>
+                            <td>Bánh su kem</td>
+                            <td>50.000đ</td>
+                            <td class="cancel">Đã hủy</td>
+                            <td><a href="">Đặt lại</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="logout" class="tab hide">
+                <div class="flex-column-center border">
+                    <h4>Bạn có muốn đăng xuất không</h4>
+                    <div class="btn-logout">
+                        <button class="btn-sub logout">ĐĂNG XUẤT</button>
+                        <button class="btn-sub back">QUAY LẠI</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js" type="application/javascript"></script>
+</html>
