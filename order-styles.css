@@ -189,3 +189,35 @@
     color: #FF5D5D;
     font-weight: bold;
 }
+
+/* Status line */
+.status-line
+{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+/* Status button */
+.status-btn {
+    width: 11px;
+    height: 11px;
+    margin: 11px 8px 0 0;
+    flex-shrink: 0;
+    z-index: 1;
+    border-radius: 50%;
+    background: #d8d8d8;
+}
+
+.status-btn.active {
+    background-color: #26aa99;
+}
+
+/* Time seperation from status */
+.time-seperation {
+    width: 120px;
+    margin: 0 4px 0 0;
+    flex-shrink: 0;
+}
