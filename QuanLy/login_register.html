@@ -1,0 +1,244 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/login-register-styles.css" />
+    <link rel="stylesheet" href="/assets/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/login-register-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/footer.css">
+    <title>User</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="flex-row-center">
+      <div class="mobile flex-row-center">
+        <a href="index.html"
+          ><img src="./assets/img/logo.png" alt="logo" class="logo"
+        /></a>
+        <div class="showNav"><span class="material-icons"> menu </span></div>
+      </div>
+      <div class="flex-row-center gap hide-mobile">
+        <div class="navbar left-header flex-row-center">
+          <ul class="flex-row-center">
+            <li><a href="index.html"> Trang Chủ </a></li>
+            <li><a href="blog.html"> Blog </a></li>
+            <li><a href="contact.html"> Liên Hệ </a></li>
+            <li><a href="product-bread.html"> Sản Phẩm </a></li>
+          </ul>
+        </div>
+        <div class="more right-header flex-row-center">
+          <a href="#"><span class="material-icons search"> search </span></a>
+          <a href="user.html"
+            ><span class="material-icons user"> person </span></a
+          >
+          <a href="cart.html"
+            ><span class="material-icons"> shopping_bag </span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="tablist flex-row-center">
+        <button
+          class="tablink flex-row-center active-tab"
+          onclick="changeTab(event,'login')"
+        >
+          ĐĂNG NHẬP
+        </button>
+        <button
+          class="tablink flex-row-center"
+          onclick="changeTab(event,'register')"
+        >
+          ĐĂNG KÝ
+        </button>
+      </div>
+      <div id="login" class="tab">
+        <div class="email">
+          <span>Email đăng nhập</span>
+          <input type="email" />
+        </div>
+        <div class="password">
+          <span>Mật khẩu</span>
+          <input type="password" />
+        </div>
+        <div class="checkbox-remember">
+          <input type="checkbox" />
+          <span>Ghi nhớ đăng nhập | <a href="#">Bạn quên mật khẩu?</a></span>
+        </div>
+        <button class="btn-main btn-submit">ĐĂNG NHẬP</button>
+        <div class="signin-or">
+          <div class="wall"></div>
+          <span>Hoặc đăng nhập bằng</span>
+        </div>
+        <div class="signin-with">
+          <a href="https://www.facebook.com/" class="btn-with facebook">
+            <button>
+              <img src="./assets/img/face_logo.png" alt="facebook" />
+              <span>Facebook</span>
+            </button>
+          </a>
+          <a href="https://accounts.google.com/" class="btn-with google">
+            <button>
+              <img src="./assets/img/gg_logo.png" alt="google" />
+              <span>Google</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div id="register" class="tab hide">
+        <div class="flex-column input-account">
+          <div>
+            <span>Email đăng nhập</span>
+            <p>*</p>
+          </div>
+          <input type="email" />
+        </div>
+        <div class="flex-column input-account">
+          <div>
+            <span>Mật khẩu</span>
+            <p>*</p>
+          </div>
+          <input type="password" />
+        </div>
+        <div class="flex-column input-account">
+          <div>
+            <span>Xác nhận mật khẩu</span>
+            <p>*</p>
+          </div>
+          <input class="re-pass" />
+        </div>
+        <div class="flex-column input-account">
+          <div>
+            <span>Họ và tên</span>
+            <p>*</p>
+          </div>
+          <input class="name" />
+        </div>
+        <div class="flex-column input-account">
+          <div>
+            <span>Số điện thoại</span>
+            <p>*</p>
+          </div>
+          <input class="contact" />
+        </div>
+        <div class="flex-column input-account">
+          <div>
+            <span>Ngày sinh</span>
+            <p>*</p>
+          </div>
+          <input class="dob" placeholder="dd/mm/yy" />
+        </div>
+        <div class="address input-account">
+          <div>
+            <span>Địa chỉ</span>
+            <p>*</p>
+          </div>
+          <select name="thanh-pho" id="city">
+            <option value="">-- Chọn Tỉnh/Thành Phố --</option>
+            <option value="">Thành phố Hồ Chí Minh</option>
+            <option value="">Hà Nội</option>
+            <option value="">Ninh Thuận</option>
+          </select>
+          <select name="quan" id="quan">
+            <option value="">-- Chọn Quận/Huyện --</option>
+          </select>
+          <select name="phuong" id="phuong">
+            <option value="">-- Chọn Phường/Xã --</option>
+          </select>
+        </div>
+        <div class="checkbox-remember-2">
+          <input type="checkbox" />
+          <span
+            >Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và
+            <a href="#">Chính sách bảo mật</a> của công ty</span
+          >
+        </div>
+        <button class="btn-main btn-register">ĐĂNG KÝ</button>
+        <div class="signin-or">
+          <div class="wall"></div>
+          <span>Hoặc đăng nhập bằng</span>
+        </div>
+        <div class="signin-with">
+          <a href="https://www.facebook.com/" class="btn-with facebook">
+            <button>
+              <img src="./assets/img/face_logo.png" alt="facebook" />
+              <span>Facebook</span>
+            </button>
+          </a>
+          <a href="https://accounts.google.com/" class="btn-with google">
+            <button>
+              <img src="./assets/img/gg_logo.png" alt="google" />
+              <span>Google</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+     <!-- footer -->
+     <footer class="flex-column-center">
+      <div class="footer-top grid-four-column">
+          <a href="index.html">Trang Chủ</a>
+          <a href="blog.html">Blog</a>
+          <a href="product-bread.html">Sản Phẩm</a>
+          <a href="contact.html">Liên Hệ</a>
+          <div class="contact-footer">
+              <p class="email">Email: ................</p>
+              <p class="hotline">Hotline: ................</p>
+          </div>
+          <a href="guide.html">Hướng Dẫn Mua Hàng</a>
+          <a href="policy.html">Chính Sách</a>
+          <div class="follow">
+              <span>Follow us:</span>
+              <div class="internet">
+                  <a href=""><img src="./assets/img/facebook.png" alt="" /></a>
+                  <a href=""><img src="./assets/img/instagram.png" alt="" /></a>
+                  <a href=""><img src="./assets/img/youtube.png" alt="" /></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-mid flex-row-center">
+          <div class="mid-left flex-row-center">
+              <span class="material-icons"> contact_mail </span>
+              <div>
+                  <span>ĐĂNG KÝ NHẬN EMAIL</span>
+                  <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
+              </div>
+          </div>
+          <div class="mid-right flex-row-center">
+              <input type="email" placeholder="Nhập Email của bạn" />
+              <button><span class="material-icons"> mail </span></button>
+          </div>
+      </div>
+      <p class="footer-bot">© 2022 All Rights Reserved Terms of Use and Privacy Policy</p>
+  </footer>
+    <script src="/assets/script/login-register.js"></script>
+    <script src="/assets/script/navbar.js"></script>
+  </body>
+</html>
