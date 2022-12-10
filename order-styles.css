@@ -207,10 +207,17 @@
     align-items: center;
 }
 .shipping-status-finished {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 30px;
     align-items: center;
     color: green;
+}
+
+.shipping-status-pending {
+    font-weight: 600;
+    font-size: 30px;
+    align-items: center;
+    color: red;
 }
 
 /* Total format */
