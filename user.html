@@ -9,10 +9,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="user.css" />
-        <link rel="stylesheet" href="responsive_user.css" />
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/user/user.css" />
+        <link rel="stylesheet" href="./assets/css/user/responsive_user.css" />
+        <link rel="stylesheet" href="./assets/css/navbar.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <!-- Script -->
+        <script src="./assets/js/AddHeaderFooter.js"></script>
     </head>
     <body bgcolor="#FFFAE7">
+        <script>
+            headerShow();
+        </script>
         <div class="container flex-column-center">
             <div class="flex-contant flex-column-start">
                 <div class="location-link"><a href="index.html">Trang chủ</a><span> > </span><a href="#">Thông tin người dùng</a></div>
@@ -38,7 +46,7 @@
             </div>
             <div id="account" class="flex-row-start tab">
                 <div class="avatar flex-column-center">
-                    <img src="avatar.jpg" alt="avatar" />
+                    <img src="./assets/img/avatar.jpg" alt="avatar" />
                     <button class="btn-main">ĐỔI AVATAR</button>
                 </div>
                 <div class="chi-tiet default grid-two">
@@ -180,6 +188,10 @@
                 </div>
             </div>
         </div>
+        <script>
+            footerShow();
+        </script>
     </body>
-    <script src="main.js" type="application/javascript"></script>
+    <script src="./assets/js/User.js" type="application/javascript"></script>
+    <script src="./assets/js/navbar.js"></script>
 </html>
