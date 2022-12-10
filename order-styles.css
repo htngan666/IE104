@@ -190,6 +190,11 @@
     font-weight: bold;
 }
 
+/* Product picture */
+.product-picture {
+    border-radius: 10px;
+}
+
 /* Status line */
 .status-line
 {
