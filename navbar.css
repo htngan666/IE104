@@ -149,6 +149,6 @@ header {
         gap: 1em;
     }
     .hide-mobile {
-        display: none;
+        display: none !important;
     }
 }
