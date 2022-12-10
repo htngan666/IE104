@@ -154,6 +154,11 @@
     font-weight: bold;
 }
 
+/* */
+.content .order-content {
+    color: #666666;
+}
+
 /* Action button below table */
 .content .action-btn {
     text-align: center;
@@ -263,4 +268,67 @@
 
 .status-text.active {
     color: #26aa99;
+}
+
+/* Button format */
+.content .link-btn {
+    color: #666;
+}
+
+.content .link-btn:hover {
+    color: black;
+}
+
+.content .action-btn {
+    text-align: center;
+}
+
+.content #action-buy-btn {
+    border: 2px solid #FF8C8C;
+    background: #fff;
+    border-radius: 10px;
+    color: #FF8C8C;
+    font-weight: bold;
+    width: 90%;
+    margin: 0.5em;
+}
+
+.content #action-buy-btn:hover {
+    color: #000;
+}
+
+.content #action-purchase-btn {
+    border: 2px solid #FF8C8C;
+    background: #FF8C8C;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 90%;
+    margin: 0.5em;
+}
+
+.container #action-other-btn {
+    background: transparent;
+    color: #666;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0.5em;
+}
+.content #action-other-btn:hover {
+    color: #000;
+}
+
+.content #action-purchase-btn:hover {
+    color: #000;
+}
+
+.content .warning-text {
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+.content .warning-text p {
+    color: #FF5D5D;
+    font-weight: bold;
 }

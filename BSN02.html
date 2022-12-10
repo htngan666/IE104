@@ -8,8 +8,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="navbar-styles.css">
-    <link rel="stylesheet" href="footer-styles.css">
     <link rel="stylesheet" href="order-styles.css">
+    <link rel="stylesheet" href="footer-styles.css">
     <!-- css.gg -->
     <link href='https://css.gg/css' rel='stylesheet'>
     <!-- UNPKG -->
@@ -94,7 +94,7 @@
 
     <!-- Content -->
     <section class="content">
-        <div class="container d-flex">
+        <div class="container d-flex mb-3">
             <a href="#" class="nav-link me-1">Trang chủ</a>
             <span>></span>
             <a href="#" class="nav-link ms-1">Đơn hàng</a>
@@ -111,10 +111,10 @@
 
         <div class="col-6 d-flex flex-column">
             <h4>Bánh Sinh Nhật Kem Bắp – Mẫu Minimal</h4>
-            <span>Phân loại: 16cm, Nội dung trên bánh: không.</span>
+            <span class="order-content">Phân loại: 16cm, Nội dung trên bánh: không.</span>
             
-            <span>Phụ kiện: hộp mica, nến số, thiệp.</span>
-            <span>x1</span>
+            <span class="order-content">Phụ kiện: hộp mica, nến số, thiệp.</span>
+            <span class="order-content">x1</span>
         </div>
 
         <div class="col-3 d-flex flex-column text-lg-end">
@@ -173,10 +173,39 @@
         </div>
 
         <!-- Action button -->
-
-        <button>ĐÁNH GIÁ</button>
-        <button>LIÊN HỆ NGƯỜI BÁN</button>
-        <button>MUA LẠI</button>
+        <div class="container">
+            
+            <div id="row-buttons">
+                <div class="row">
+                    <div class="col-3 d-flex text-lg-end">
+                        <div class="col-sm">
+                            <a href="#">
+                                <button type="button" class="btn" id="action-other-btn">XEM CÁC SẢN PHẨM KHÁC</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-9 d-flex text-lg-end">
+                        
+                        <div class="col-sm action-purchase-col">
+                            <a href="#">
+                                <button type="button" class="btn" id="action-purchase-btn">ĐÁNH GIÁ</button>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#">
+                                <button type="button" class="btn" id="action-buy-btn">LIÊN HỆ NGƯỜI BÁN</button>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#">
+                                <button type="button" class="btn" id="action-buy-btn">MUA LẠI</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
        
     <!-- Footer -->
     <footer>
