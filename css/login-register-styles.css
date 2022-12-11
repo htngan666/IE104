@@ -115,6 +115,7 @@ a:hover {
 
 .tablink {
     width: 200px;
+    height: 40px;
     font-size: 15px;
 }
 
@@ -133,6 +134,7 @@ a:hover {
 #login {
     height: 400px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .tab {
@@ -149,12 +151,19 @@ a:hover {
 
 .email input {
     width: 390px;
-    height: 25px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #F4664E;
+
 }
 
 .password input {
     width: 390px;
-    height: 25px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #F4664E;
 }
 
 .email span,
@@ -179,6 +188,11 @@ a:hover {
     Line-height: 16px;
     Line-height: 100%;
     color: #FF5D5D;
+    text-decoration: none;
+}
+
+.checkbox-remember a:hover {
+    color: #FF8D8D;
 }
 
 
@@ -271,8 +285,12 @@ a:hover {
 }
 
 select {
-    width: 300px;
-    margin: 10px;
+    width: 390px;
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: 1px solid #F4664E;
+    border-radius: 10px;
 }
 
 .tab {
@@ -287,7 +305,7 @@ body {
 }
 
 .address {
-    width: 308px;
+    width: 390px;
     height: 20px;
 }
 
@@ -300,6 +318,7 @@ body {
 .flex-column {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .flex-column div {
@@ -335,8 +354,12 @@ body {
 }
 
 .input-account input {
-    width: 300px;
-    height: 30px;
+    width: 390px;
+    margin-top: 5px;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid #FF5D5D;
+    border-radius: 10px;
 }
 
 .address {
@@ -408,8 +431,7 @@ body {
 }
 
 .checkbox-remember-2 {
-    padding-top: 140px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .checkbox-remember-2 span a {
@@ -419,7 +441,7 @@ body {
 .btn-register {
     position: relative;
     border-radius: 11px;
-    height: 17px;
+    height: 40px;
     width: 308px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -440,7 +462,7 @@ body {
 .signin-with {
     display: flex;
     gap: 35px;
-    padding: 25px 0px 50px 0px;
+    padding: 10px 0px 50px 0px;
 }
 
 .facebook button img {
@@ -459,15 +481,17 @@ body {
     background-color: #3F67A9;
     color: #FFFFFF;
     width: 240px;
-    text-align: left;
+    height: 40px;
+    text-align: center;
     border-radius: 10px;
 }
 
 .google button {
     background-color: #F4664E;
     color: #FFFFFF;
+    height: 40px;
     width: 240px;
-    text-align: left;
+    text-align: center;
     border-radius: 10px;
 }
 
