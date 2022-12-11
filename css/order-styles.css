@@ -1,12 +1,17 @@
 * {
     padding: 0;
     margin: 0;
+    text-align: left;
 }
 
 .content {
     background-color: #FFF4DD;
     padding: 10px 0;
     padding-top: 2em;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 /* Location */
@@ -205,6 +210,7 @@
     font-size: 30px;
     align-items: center;
 }
+
 .shipping-status-finished {
     font-weight: 600;
     font-size: 30px;
@@ -227,12 +233,11 @@
 }
 
 .total-price-format {
-    color:#FF0000;
+    color: #FF0000;
 }
 
 /* Status line */
-.status-line
-{
+.status-line {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -321,6 +326,7 @@
     width: 100%;
     margin: 0.5em;
 }
+
 .content #action-other-btn:hover {
     color: #000;
 }

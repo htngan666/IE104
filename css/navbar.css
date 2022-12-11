@@ -45,6 +45,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #fffae7;
+    z-index: 2;
 }
 
 .left-header {
