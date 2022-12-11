@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="navbar-styles.css">
-    <link rel="stylesheet" href="order-styles.css">
-    <link rel="stylesheet" href="footer-styles.css">
+    <link rel="stylesheet" href="css/navbar-styles.css">
+    <link rel="stylesheet" href="css/order-styles.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- css.gg -->
     <link href='https://css.gg/css' rel='stylesheet'>
     <!-- UNPKG -->
@@ -25,7 +31,6 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
-    <title>Chi tiết</title>
 </head>
 
 <body>
@@ -106,7 +111,7 @@
 <div class=" container">
     <div class="row">
         <div class="col-3">
-            <img src="img/bsn02.png" alt="" class="w-75">
+            <img src="assets/img/bsn02.png" alt="" class="w-75">
         </div>
 
         <div class="col-6 d-flex flex-column">
@@ -134,7 +139,7 @@
     <!-- Shipping status -->
 
         <div class="container">
-            <img src="img/local_shipping_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+            <img src="assets/img/local_shipping_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
             <span class="shipping-status">Giao hàng thành công</span>
             <span class="shipping-status"> | </span>
             <span class="shipping-status-finished">ĐÃ GIAO</span>
@@ -208,83 +213,41 @@
         </div>
        
     <!-- Footer -->
-    <footer>
-        <div class=" container mb-3">
-            <div class="row text-lg-start">
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item">
-                            <a href="#" class="nav-link">Trang chủ</a>
-                        </li>
-                        <li class="nav-item m-2 ms-3">
-                            Email: .............................
-                        </li>
-                        <li class="nav-item m-2 ms-3">
-                            Hotine:.............................
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item m-1">
-                            <a href="#" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item m-1">
-                            <a href="#" class="nav-link">Hướng dẫn mua</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item m-1">
-                            <a href="#" class="nav-link">Sản phẩm</a>
-                        </li>
-                        <li class="nav-item m-1">
-                            <a href="#" class="nav-link">Chính sách</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item m-1">
-                            <a href="#" class="nav-link">Liên hệ</a>
-                        </li>
-                        <li class="nav-item m-1">
-                            <a href="#" class="nav-link">Follow us</a>
-                        </li>
-                        <li class="nav-item d-flex ms-2">
-                            <a href="#" class="nav-link">
-                                <i class="gg-instagram"></i>
-                            </a>
-                            <a href="#" class="nav-link">
-                                <i class="gg-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
+    <footer class="flex-column-center">
+        <div class="footer-top grid-four-column">
+            <a href="index.html">Trang Chủ</a>
+            <a href="blog.html">Blog</a>
+            <a href="product-bread.html">Sản Phẩm</a>
+            <a href="contact.html">Liên Hệ</a>
+            <div class="contact-footer">
+                <p class="email">Email: ................</p>
+                <p class="hotline">Hotline: ................</p>
+            </div>
+            <a href="guide.html">Hướng Dẫn Mua Hàng</a>
+            <a href="policy.html">Chính Sách</a>
+            <div class="follow">
+                <span>Follow us:</span>
+                <div class="internet">
+                    <a href=""><img src="assets/img/facebook.png" alt="" /></a>
+                    <a href=""><img src="assets/img/instagram.png" alt="" /></a>
+                    <a href=""><img src="assets/img/youtube.png" alt="" /></a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row second-container pt-3 pb-3">
-                <div class="col-sm-6 d-flex email-title">
-                    <i class="bi bi-person-vcard fs-1 pe-4"></i>
-                    <div class="email-banner">
-                        <h4>ĐĂNG KÝ NHẬN EMAIL</h4>
-                        <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 m-auto">
-                    <div class="input-group d-flex">
-                        <input type="text" id="email-form" class="form-control h-100"
-                            placeholder="Nhập Email của bạn..." />
-                        <button type="button" class="btn email-btn rounded ms-2 h-100">
-                            <i class="bi bi-envelope"></i>
-                        </button>
-                    </div>
+        <div class="footer-mid flex-row-center">
+            <div class="mid-left flex-row-center">
+                <span class="material-icons"> contact_mail </span>
+                <div>
+                    <span>ĐĂNG KÝ NHẬN EMAIL</span>
+                    <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
                 </div>
             </div>
+            <div class="mid-right flex-row-center">
+                <input type="email" placeholder="Nhập Email của bạn" />
+                <button><span class="material-icons"> mail </span></button>
+            </div>
         </div>
-        <p class="text-lg-center p-3">© 2022 All Rights Reserved Terms of Use and Privacy Policy </p>
+        <p class="footer-bot">© 2022 All Rights Reserved Terms of Use and Privacy Policy</p>
     </footer>
 </body>
 
