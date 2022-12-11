@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/308033d071.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,11 +14,10 @@
     <title>Homepage</title>
 
 </head>
-
 <body>
     <header class="flex-row-center">
         <div class="mobile flex-row-center">
-            <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
+            <a href="index.html"><img src="./images/logo.png" alt="logo" class="logo" /></a>
             <div class="showNav"><span class="material-icons"> menu </span></div>
         </div>
         <div class="flex-row-center gap hide-mobile">
@@ -38,7 +36,8 @@
             </div>
         </div>
     </header>
-
+    
+    <script src="./js/navbar.js"></script>
 
     <div class="all-bg">
         <div class="header-grid">
@@ -48,18 +47,19 @@
         <div id="container-bgcake"></div>
         <p class="fonts-absolute">Tiệm Bánh Okeki</p>
         <p class="fonts-absolute-2">Nơi hàng ngàn chiến bánh đẳng cấp được ra đời</p>
-        <p class="font-absolute">SẢN PHẨM</p>
+        <a href="product-bread.html"><p class="font-absolute">SẢN PHẨM</p></a>
         <div class="icons-down"><i class="fa-solid fa-angle-down"></i></div>
+        
 
         <div class="container-title">
-            <div>
+            <div class="banchay">
                 <p>BÁN <b>CHẠY</b> NHẤT</p>
                 <div class="title-row1">
-                    <a href=""><img src="assets/img/banhbido.png" alt=""
-                            onmouseover="this.src = 'assets/img/Picture2.png'"
-                            onmouseout="this.src ='assets/img/banhbido.png'"></a>
-                    <img src="assets/img/banhcacao.png" alt="">
-                    <img src="assets/img/banhtaco.png" alt="">
+                    <a href="cart.html"><img src="/TrangChu/images/banhbido.png" alt="" 
+                        onmouseover="this.src = '/TrangChu/images/Picture2.png'"
+                        onmouseout="this.src ='/TrangChu/images/banhbido.png'"></a>
+                    <img src="images/banhcacao.png" alt="">
+                    <img src="images/banhtaco.png" alt="">
                     <p>Bánh kem bí đỏ</p>
                     <p>Mousse Cacao Quế</p>
                     <p>Taco Gà</p>
@@ -71,14 +71,14 @@
                 </div>
             </div>
 
-            <div>
+            <div class="danhgiacao">
                 <p>ĐƯỢC ĐÁNH GIÁ<b style="color: rgb(214, 121, 15)"> CAO</b> NHẤT</p>
                 <div class="title-row1">
-                    <a href=""><img src="assets/img/bg-cake4.png" alt=""
-                            onmouseover="this.src = 'assets/img/Picture4.png'"
-                            onmouseout="this.src ='assets/img/bg-cake4.png'"></a>
-                    <img src="assets/img/bg-cake5.png" alt="">
-                    <img src="assets/img/bg-cake6.png" alt="">
+                    <a href="cart.html"><img src="/TrangChu/images/bg-cake4.png" alt="" 
+                        onmouseover="this.src = '/TrangChu/images/Picture4.png'"
+                        onmouseout="this.src ='/TrangChu/images/bg-cake4.png'"></a>
+                    <img src="images/bg-cake5.png" alt="">
+                    <img src="images/bg-cake6.png" alt="">
                     <p style="color: rgb(214, 121, 15)">Cupcake Red Velvet</p>
                     <p style="color: rgb(214, 121, 15)">Bánh Phô Mai</p>
                     <p style="color: rgb(214, 121, 15)">Cookie Chanh</p>
@@ -95,65 +95,64 @@
         <div class="title-grid">
             <p class="title-grid-pan">PHÂN LOẠI BÁNH</p>
             <div class="title-phanloaibanh">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
+                    
+                    <a href="product-cake.html"><img src="/TrangChu/images/banhkem.png" alt=""></a>
+                    <a href="product-cupcake.html"><img src="/TrangChu/images/cupcake.png" alt=""></a>
+                    <a href="produck-tiramisu.html"><img src="/TrangChu/images/tira.png" alt=""></a>
+                    <a href="product-su.html"><img src="/TrangChu/images/sukem.png" alt=""></a>
 
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
+                    <a href="product-mousse.html"><img src="/TrangChu/images/panna.png" alt=""></a>
+                    <a href="product-bread.html"><img src="/TrangChu/images/banhmi.png" alt=""></a>
+                    <a href="product-shokupan.html"><img src="/TrangChu/images/shoku.png" alt=""></a>
+                    <a href="product-panna.html"><img src="/TrangChu/images/Picture8.png" alt=""></a>
 
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-                <img style="width: 220px;" src="assets/img/banhbanh.png" alt="">
-
+                    <img src="/TrangChu/images/Picture9.png" alt="">
+                    <img src="/TrangChu/images/Picture10.png" alt="">
+                    <img src="/TrangChu/images/Picture11.png" alt="">
+                    <img src="/TrangChu/images/Picture12.png" alt="">
+    
             </div>
-
         </div>
-
     </div>
 
-    <footer class="flex-column-center">
-        <div class="footer-top grid-four-column">
-            <a href="index.html">Trang Chủ</a>
-            <a href="blog.html">Blog</a>
-            <a href="product-bread.html">Sản Phẩm</a>
-            <a href="contact.html">Liên Hệ</a>
-            <div class="contact-footer">
-                <p class="email">Email: ................</p>
-                <p class="hotline">Hotline: ................</p>
-            </div>
-            <a href="guide.html">Hướng Dẫn Mua Hàng</a>
-            <a href="policy.html">Chính Sách</a>
-            <div class="follow">
-                <span>Follow us:</span>
-                <div class="internet">
-                    <a href=""><img src="assets/img/facebook.png" alt="" /></a>
-                    <a href=""><img src="assets/img/instagram.png" alt="" /></a>
-                    <a href=""><img src="assets/img/youtube.png" alt="" /></a>
+    <div class="foot">
+        <footer class="flex-column-center">
+            <div class="footer-top grid-four-column">
+                <a href="index.html">Trang Chủ</a>
+                <a href="blog.html">Blog</a>
+                <a href="product-bread.html">Sản Phẩm</a>
+                <a href="contact.html">Liên Hệ</a>
+                <div class="contact-footer">
+                    <p class="email">Email: ................</p>
+                    <p class="hotline">Hotline: ................</p>
+                </div>
+                <a href="guide.html">Hướng Dẫn Mua Hàng</a>
+                <a href="policy.html">Chính Sách</a>
+                <div class="follow">
+                    <span>Follow us:</span>
+                    <div class="internet">
+                        <a href=""><img src="/TrangChu/images/facebook.png" alt="" /></a>
+                        <a href=""><img src="/TrangChu/images/instagram.png" alt="" /></a>
+                        <a href=""><img src="/TrangChu/images/youtube.png" alt="" /></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-mid flex-row-center">
-            <div class="mid-left flex-row-center">
-                <span class="material-icons"> contact_mail </span>
-                <div>
-                    <span>ĐĂNG KÝ NHẬN EMAIL</span>
-                    <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
+            <div class="footer-mid flex-row-center">
+                <div class="mid-left flex-row-center">
+                    <span class="material-icons"> contact_mail </span>
+                    <div>
+                        <span>ĐĂNG KÝ NHẬN EMAIL</span>
+                        <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
+                    </div>
+                </div>
+                <div class="mid-right flex-row-center">
+                    <input type="email" placeholder="Nhập Email của bạn" />
+                    <button><span class="material-icons"> mail </span></button>
                 </div>
             </div>
-            <div class="mid-right flex-row-center">
-                <input type="email" placeholder="Nhập Email của bạn" />
-                <button><span class="material-icons"> mail </span></button>
-            </div>
-        </div>
-        <p class="footer-bot">© 2022 All Rights Reserved Terms of Use and Privacy Policy</p>
-    </footer>
+            <p class="footer-bot">© 2022 All Rights Reserved Terms of Use and Privacy Policy</p>
+        </footer>
+    </div>
 
-    <script src="js/navbar.js"></script>
 </body>
-
 </html>
