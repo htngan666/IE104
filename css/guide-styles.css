@@ -121,9 +121,10 @@ ul {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 60px;
     color: rgba(255, 93, 93, 0.5);
+    margin-bottom: 30px;
 }
 
 /* Tablet: width < 820px */
