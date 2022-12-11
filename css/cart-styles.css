@@ -8,7 +8,10 @@
     background-color: #FFF4DD;
     padding: 10px 0;
     padding-top: 2em;
-    margin-top: 7em;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 /* Location */
@@ -286,9 +289,18 @@
     width: 200%;
 }
 
+.form-container .form-inner p {
+    text-align: left;
+}
+
+.form-container .form-inner input {
+    text-align: left;
+}
+
 .form-container .form-inner form {
     width: 50%;
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    padding: 0 1em;
 }
 
 .form-inner form .field {
@@ -356,7 +368,7 @@
     font-size: 1.3em;
 }
 
-.table .purchase-method {
+.table .p-method {
     text-align: left;
 }
 
