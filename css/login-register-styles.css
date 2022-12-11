@@ -33,8 +33,9 @@ body {
     align-items: flex-start;
     flex-direction: row;
 }
-.mid-right{
-    background:center;
+
+.mid-right {
+    background: center;
 }
 
 a {
@@ -267,6 +268,11 @@ a:hover {
 /* Register */
 #register {
     align-items: center;
+}
+
+select {
+    width: 300px;
+    margin: 10px;
 }
 
 .tab {
@@ -513,7 +519,8 @@ body {
     .checkbox-remember-2 a {
         font-size: 10px;
     }
-    .wall{
+
+    .wall {
         display: none;
     }
 }
