@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/footer.css" />
 
 </head>
+
 <body>
     <header class="flex-row-center">
         <div class="mobile flex-row-center">
@@ -52,7 +54,7 @@
                 <img src="assets/img/Picture4.png" alt="">
             </div>
         </div>
-        
+
         <div class="column2">
             <h1>Bánh Sinh Nhật Bắp – Mẫu Minimal</h1>
             <h2>250.000 - 500.000đ</h2>
@@ -64,26 +66,26 @@
             </div>
 
             <p class="text-nd">Nội dung trên bánh</p>
-            
+
             <textarea class="nd" name="" id="" cols="30" rows="10" placeholder="Tối đa 40 ký tự"></textarea>
 
             <p class="text-pk">Thêm phụ kiện kèm theo:</p>
-            
+
             <div>
                 <label class="container">Hộp mica (nếu muốn thay hộp giấy) (25.000đ)
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
-                  </label>
-                  <label class="container">Mua thêm nến số (10.000đ)
+                </label>
+                <label class="container">Mua thêm nến số (10.000đ)
                     <input type="checkbox">
                     <span class="checkmark"></span>
-                  </label>
-                  <label class="container">Mua thiệp viết tay (20.000đ)
+                </label>
+                <label class="container">Mua thiệp viết tay (20.000đ)
                     <input type="checkbox">
                     <span class="checkmark"></span>
-                  </label>                  
+                </label>
             </div>
-            
+
             <div class="SL">
                 <p class="text-sl"> Số lượng: </p>
                 <div class="wrapper">
@@ -91,36 +93,42 @@
                     <span class="num">01</span>
                     <span class="plus">+</span>
                 </div>
-  
+
                 <script>
                     const plus = document.querySelector(".plus"),
-                    minus = document.querySelector(".minus"),
-                    num = document.querySelector(".num");
+                        minus = document.querySelector(".minus"),
+                        num = document.querySelector(".num");
                     let a = 1;
-                    plus.addEventListener("click", ()=>{
+                    plus.addEventListener("click", () => {
                         a++;
                         a = (a < 10) ? "0" + a : a;
                         num.innerText = a;
                     });
- 
-                    minus.addEventListener("click", ()=>{
-                    if(a > 1){
-                    a--;
-                    a = (a < 10) ? "0" + a : a;
-                    num.innerText = a;
-                    }
+
+                    minus.addEventListener("click", () => {
+                        if (a > 1) {
+                            a--;
+                            a = (a < 10) ? "0" + a : a;
+                            num.innerText = a;
+                        }
                     });
                 </script>
             </div>
-            
-            
+
+
             <div class="gia">
-                <pre= class="dv">Dịch vụ cộng thêm:</pre>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0đ</p>
-                <hr class="container-hr1">
-                <pre= class="gsp">Giá sản phẩm chính:</pre>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;0đ</p>
-                <hr class="container-hr1">
-                <pre= class="tong">Tổng tạm tính:</pre>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&nbsp;&ensp;&ensp;250.000đ</p>
-                <hr class="container-hr1">
+                <pre= class="dv">Dịch vụ cộng thêm:</pre>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0đ
+                    </p>
+                    <hr class="container-hr1">
+                    <pre= class="gsp">Giá sản phẩm chính:</pre>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;0đ
+                        </p>
+                        <hr class="container-hr1">
+                        <pre= class="tong">Tổng tạm tính:</pre>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&nbsp;&ensp;&ensp;250.000đ
+                            </p>
+                            <hr class="container-hr1">
             </div>
 
 
@@ -131,20 +139,25 @@
         </div>
     </div>
     <div class="ctsp2">
-        
+
         <p class="mota">MÔ TẢ CHI TIẾT</p>
         <hr class="container-hr2">
         <u class="danhmuc"> DANH MỤC: Bánh sinh nhật </u>
-        <p class="chitiet"> Bánh Cheese & Mousse Mix 2 vị này được tạo nên bởi Cheesecake dâu tây và Red velvet đã thật sự làm bùng nổ hương vị, ngọt ngào tan ngay từ đầu lưỡi.<br> 
-        - Cheesecake dâu tây với hương vị thơm ngon cùng vẻ ngoài đẹp mắt khiến người ta khó mà cưỡng lại được. Là sự kết hợp giữa lớp kem beo béo, mềm mịn và những quả dâu tây căng mọng, hương vị ngọt ngào pha chút chua chua đầu lưỡi khiến biết bao nhiêu người mê mẫn. <br/>
-        - Red velvet gây ấn tượng với cái tên kiêu kì lộng lẫy, Velvet nghĩa là nhung, là sự mềm mại, mịn màng kết hợp sắc đỏ rực rỡ lại quyến rũ, tất cả đã hoà quyện tạo nên sự kết hợp khó mà cưỡng lại. <br/>
+        <p class="chitiet"> Bánh Cheese & Mousse Mix 2 vị này được tạo nên bởi Cheesecake dâu tây và Red velvet đã thật
+            sự làm bùng nổ hương vị, ngọt ngào tan ngay từ đầu lưỡi.<br>
+            - Cheesecake dâu tây với hương vị thơm ngon cùng vẻ ngoài đẹp mắt khiến người ta khó mà cưỡng lại được. Là
+            sự kết hợp giữa lớp kem beo béo, mềm mịn và những quả dâu tây căng mọng, hương vị ngọt ngào pha chút chua
+            chua đầu lưỡi khiến biết bao nhiêu người mê mẫn. <br />
+            - Red velvet gây ấn tượng với cái tên kiêu kì lộng lẫy, Velvet nghĩa là nhung, là sự mềm mại, mịn màng kết
+            hợp sắc đỏ rực rỡ lại quyến rũ, tất cả đã hoà quyện tạo nên sự kết hợp khó mà cưỡng lại. <br />
         </p>
 
 
         <p class="danhgia">ĐÁNH GIÁ</p>
         <hr class="container-hr3">
-        <b class="luotdg">Lượt đánh giá: 100 &emsp;&emsp; Tốt (60) &emsp;&emsp; Bình thường (30) &emsp;&emsp; Kém (10)</b>    
-        
+        <b class="luotdg">Lượt đánh giá: 100 &emsp;&emsp; Tốt (60) &emsp;&emsp; Bình thường (30) &emsp;&emsp; Kém
+            (10)</b>
+
         <div class="ava-grid">
             <div class="ron">
                 <img src="assets/img/749b0872f04695611071027224349cb8.jpg" alt="ava-grid">
@@ -162,7 +175,7 @@
                 <img src="assets/img/Picture4.png" alt="">
             </div>
         </div>
-        
+
         <div class="ava-grid">
             <div class="ron">
                 <img src="assets/img/749b0872f04695611071027224349cb8.jpg" alt="ava-grid">
@@ -183,40 +196,32 @@
         <p class="sptt">SẢN PHẨM TƯƠNG TỰ</p>
         <hr class="container-hr4">
         <div class="sp-grid">
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
 
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
 
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
 
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
-    
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
-         
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
-     
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
-     
-            <a href=""><img src="assets/img/Picture5.png" alt="" 
-            onmouseover="this.src = 'assets/img/Picture6.png'"
-            onmouseout="this.src ='assets/img/Picture5.png'"></a>
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
+
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
+
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
+
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
+
+            <a href=""><img src="assets/img/Picture5.png" alt="" onmouseover="this.src = 'assets/img/Picture6.png'"
+                    onmouseout="this.src ='assets/img/Picture5.png'"></a>
         </div>
     </div>
-    
+
     <footer class="flex-column-center">
         <div class="footer-top grid-four-column">
             <a href="index.html">Trang Chủ</a>
@@ -257,4 +262,5 @@
     <script src="/js/navbar.js"></script>
 
 </body>
+
 </html>
