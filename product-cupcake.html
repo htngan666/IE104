@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="navbar-styles.css">
-    <link rel="stylesheet" href="footer-styles.css">
-    <link rel="stylesheet" href="products-styles.css">
+    <link rel="stylesheet" href="css/products-styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
-    <!-- css.gg -->
-    <link href='https://css.gg/css' rel='stylesheet'>
-    <!-- UNPKG -->
-    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
-    <!-- JSDelivr -->
-    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,67 +30,27 @@
 
 <body>
     <!-- Navbar -->
-    <header class="bg-white fixed-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="navbar-logo">
-                    <a href="#" class="logo">
-                        <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M24.9933 21.6667C24.488 21.6667 23.9941 21.5201 23.574 21.2454C23.1539 20.9707 22.8264 20.5802 22.6331 20.1234C22.4397 19.6666 22.3891 19.1639 22.4877 18.679C22.5863 18.194 22.8296 17.7486 23.1869 17.3989C23.5441 17.0493 23.9993 16.8112 24.4949 16.7147C24.9905 16.6183 25.5041 16.6678 25.9709 16.857C26.4377 17.0462 26.8367 17.3666 27.1174 17.7778C27.3981 18.1889 27.5479 18.6722 27.5479 19.1667C27.5479 19.8297 27.2788 20.4656 26.7997 20.9345C26.3206 21.4033 25.6708 21.6667 24.9933 21.6667ZM37.5128 13.79C36.8291 9.92353 34.7698 6.41833 31.6994 3.89462C28.6289 1.3709 24.7453 -0.00865223 20.7355 4.08338e-05C8.98407 4.08338e-05 5.61872 7.79003 3.39617 12.945C2.94549 14.4036 2.17935 15.7502 1.14977 16.8934C0.842201 17.0689 0.598589 17.3344 0.453183 17.6524C0.307776 17.9705 0.267887 18.3251 0.339124 18.6665C0.410361 19.0079 0.589141 19.3189 0.850328 19.5557C1.11152 19.7925 1.44197 19.9432 1.79524 19.9867C6.00499 20.3331 10.239 19.7051 14.1547 18.1534C13.9387 18.6219 13.8754 19.1442 13.9737 19.6492C14.0719 20.1541 14.3268 20.6172 14.7037 20.9753C15.0806 21.3333 15.561 21.569 16.0797 21.6502C16.5984 21.7314 17.13 21.6542 17.6022 21.429C18.0744 21.2039 18.4643 20.8418 18.7186 20.392C18.9729 19.9422 19.0793 19.4267 19.0234 18.9156C18.9675 18.4044 18.752 17.9226 18.4062 17.5357C18.0603 17.1488 17.6011 16.8756 17.0909 16.7534C20.4368 14.9191 23.3208 12.3753 25.5315 9.30836C25.6718 9.13105 25.774 8.92785 25.8322 8.71094C25.8903 8.49403 25.9031 8.26787 25.8699 8.046C25.8366 7.82413 25.7579 7.61111 25.6385 7.4197C25.5191 7.22829 25.3615 7.06243 25.175 6.93205C24.9886 6.80166 24.7772 6.70944 24.5535 6.66089C24.3298 6.61235 24.0983 6.60849 23.873 6.64954C23.6478 6.69059 23.4333 6.7757 23.2424 6.89979C23.0515 7.02388 22.8882 7.18439 22.7622 7.3717C20.7761 10.1081 18.1834 12.3696 15.1781 13.987C12.1728 15.6044 8.83264 16.5359 5.40754 16.7117C5.79414 15.9567 6.1535 15.1184 6.53499 14.24C8.62982 9.38003 11.2373 3.33337 20.7355 3.33337C24.1006 3.32549 27.3489 4.53987 29.8515 6.74135C32.354 8.94282 33.9328 11.9748 34.282 15.25C34.321 15.6081 34.4775 15.9442 34.728 16.208C34.9786 16.4718 35.3097 16.6491 35.6718 16.7134C36.2923 16.8321 36.8457 17.1718 37.2251 17.6668C37.6045 18.1618 37.7828 18.7769 37.7256 19.3931C37.6684 20.0092 37.3797 20.5828 36.9154 21.0028C36.4511 21.4227 35.8442 21.6593 35.2119 21.6667C35.0679 21.6628 34.9244 21.6477 34.7828 21.6217C34.3855 21.5508 33.9755 21.6212 33.6267 21.8202C33.2778 22.0191 33.0132 22.3335 32.8804 22.7067C31.3203 27.035 26.0697 31.6667 20.7355 31.6667C15.7965 31.6667 11.1981 27.8617 9.21228 24.1017C9.0045 23.7092 8.6459 23.4135 8.21535 23.2797C7.78481 23.1459 7.31759 23.185 6.91649 23.3884C6.51539 23.5917 6.21325 23.9426 6.07655 24.3639C5.93985 24.7853 5.97978 25.2425 6.18756 25.635C7.95268 28.8581 10.6412 31.5065 13.9231 33.255V38.3333C13.9231 38.7754 14.1025 39.1993 14.4219 39.5118C14.7413 39.8244 15.1745 40 15.6262 40C16.0779 40 16.5111 39.8244 16.8305 39.5118C17.1499 39.1993 17.3293 38.7754 17.3293 38.3333V34.5633C19.5605 35.15 21.9105 35.15 24.1417 34.5633V38.3333C24.1417 38.7754 24.3212 39.1993 24.6406 39.5118C24.96 39.8244 25.3931 40 25.8448 40C26.2965 40 26.7297 39.8244 27.0491 39.5118C27.3685 39.1993 27.5479 38.7754 27.5479 38.3333V33.2567C31.0634 31.4072 33.886 28.5107 35.6071 24.9867C36.9454 24.8973 38.2138 24.3688 39.2071 23.4866C40.2005 22.6045 40.8607 21.4202 41.0811 20.1253C41.3015 18.8304 41.0692 17.5007 40.4217 16.351C39.7741 15.2014 38.7493 14.2991 37.5128 13.79V13.79Z"
-                                fill="#FF5D5D" />
-                        </svg>
-                    </a>
-                    <p>OPEN: 8 AM - 9 PM</p>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sản Phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="gg-search"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto flex-row justify-content-center">
-                        <li class="right-nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="gg-profile"></i>
-                            </a>
-                        </li>
-                        <li class="right-nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="gg-play-list-check"></i>
-                            </a>
-                        </li>
-                        <li class="right-nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="gg-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="flex-row-center">
+        <div class="mobile flex-row-center">
+            <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
+            <div class="showNav"><span class="material-icons"> menu </span></div>
+        </div>
+        <div class="flex-row-center gap hide-mobile">
+            <div class="navbar left-header flex-row-center">
+                <ul class="flex-row-center m-auto">
+                    <li><a href="index.html"> Trang Chủ </a></li>
+                    <li><a href="blog.html"> Blog </a></li>
+                    <li><a href="contact.html"> Liên Hệ </a></li>
+                    <li><a href="product-bread.html"> Sản Phẩm </a></li>
+                </ul>
             </div>
-
-        </nav>
+            <div class="more right-header flex-row-center">
+                <a href="#"><span class="material-icons search"> search </span></a>
+                <a href="user.html"><span class="material-icons user"> person </span></a>
+                <a href="cart.html"><span class="material-icons"> shopping_bag </span></a>
+            </div>
+        </div>
     </header>
-
 
     <!-- Content -->
     <section class="content">
@@ -147,64 +106,64 @@
         <div class="container">
             <div class="row">
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake1.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake1.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE HÌNH HEO</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake2.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake2.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE HÌNH HOA HỒNG</p>
                     </a>
                     <p class="product-item-price">20.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake3.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake3.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE THANK YOU</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake4.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake4.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE HALLOWEEN</p>
                     </a>
                     <p class="product-item-price">15.000đ </p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake5.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake5.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE KỈ NIỆM</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake6.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake6.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE MẶT CƯỜI</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake7.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake7.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE CHỮ</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake8.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake8.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE TẶNG MẸ</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
                 </div>
                 <div class="product-item col-lg-4 col-md-4 col-sm-6">
-                    <img src="/images/cupcake/cupcake9.png" alt="Cake">
-                    <a href="#" class="product-link">
+                    <img src="assets/img/cupcake/cupcake9.png" alt="Cake">
+                    <a href="detail.html" class="product-link">
                         <p class="product-item-title">BÁNH CUPCAKE STICKER</p>
                     </a>
                     <p class="product-item-price">15.000đ</p>
@@ -216,87 +175,43 @@
         </div>
     </section>
 
-
     <!-- Footer -->
-    <footer>
-        <div class="container mb-3">
-            <div class="row text-lg-start">
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item">
-                            <a href="#" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item m-2 ms-3">
-                            Email: .............................
-                        </li>
-                        <li class="nav-item m-2 ms-3">
-                            Hotine:.............................
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item m-1">
-                            <a href="#" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item m-1">
-                            <a href="#" class="nav-link">Hướng dẫn mua</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item m-1">
-                            <a href="#" class="nav-link">Sản phẩm</a>
-                        </li>
-                        <li class="nav-item m-1">
-                            <a href="#" class="nav-link">Chính sách</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column">
-                        <li class=" nav-item m-1">
-                            <a href="#" class="nav-link">Liên hệ</a>
-                        </li>
-                        <li class="nav-item m-1">
-                            <a href="#" class="nav-link">Follow us</a>
-                        </li>
-                        <li class="nav-item d-flex ms-2">
-                            <a href="#" class="nav-link">
-                                <i class="gg-instagram"></i>
-                            </a>
-                            <a href="#" class="nav-link">
-                                <i class="gg-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
+    <footer class="flex-column-center">
+        <div class="footer-top grid-four-column">
+            <a href="index.html">Trang Chủ</a>
+            <a href="blog.html">Blog</a>
+            <a href="product-bread.html">Sản Phẩm</a>
+            <a href="contact.html">Liên Hệ</a>
+            <div class="contact-footer">
+                <p class="email">Email: ................</p>
+                <p class="hotline">Hotline: ................</p>
+            </div>
+            <a href="guide.html">Hướng Dẫn Mua Hàng</a>
+            <a href="policy.html">Chính Sách</a>
+            <div class="follow">
+                <span>Follow us:</span>
+                <div class="internet">
+                    <a href=""><img src="assets/img/facebook.png" alt="" /></a>
+                    <a href=""><img src="assets/img/instagram.png" alt="" /></a>
+                    <a href=""><img src="assets/img/youtube.png" alt="" /></a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row second-container pt-3 pb-3">
-                <div class="col-sm-6 d-flex email-title">
-                    <i class="bi bi-person-vcard fs-1 pe-4"></i>
-                    <div class="email-banner">
-                        <h4>ĐĂNG KÝ NHẬN EMAIL</h4>
-                        <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 m-auto">
-                    <div class="input-group d-flex">
-                        <input type="text" id="email-form" class="form-control h-100"
-                            placeholder="Nhập Email của bạn..." />
-                        <button type="button" class="btn email-btn rounded ms-2 h-100">
-                            <i class="bi bi-envelope"></i>
-                        </button>
-                    </div>
+        <div class="footer-mid flex-row-center">
+            <div class="mid-left flex-row-center">
+                <span class="material-icons"> contact_mail </span>
+                <div>
+                    <span>ĐĂNG KÝ NHẬN EMAIL</span>
+                    <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
                 </div>
             </div>
+            <div class="mid-right flex-row-center">
+                <input type="email" placeholder="Nhập Email của bạn" />
+                <button><span class="material-icons"> mail </span></button>
+            </div>
         </div>
-        <p class="text-lg-center p-3">© 2022 All Rights Reserved Terms of Use and Privacy Policy </p>
+        <p class="footer-bot">© 2022 All Rights Reserved Terms of Use and Privacy Policy</p>
     </footer>
-    <script src="cart-quantity.js"></script>
 </body>
 
 </html>

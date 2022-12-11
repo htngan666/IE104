@@ -6,9 +6,11 @@
 
 .content {
     background-color: #FFF4DD;
-    padding: 10px 0;
-    margin-top: 7em;
+    padding: 0 0 10px 0;
+}
 
+a {
+    text-decoration: none !important;
 }
 
 /* Menu */
@@ -27,8 +29,8 @@
 }
 
 .content .menu-link-active {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
 }
 
 .content .menu-link:hover {
@@ -43,6 +45,11 @@
 
 .content .nav-link:hover {
     color: #FF8C8C;
+}
+
+.content .product-item {
+    text-align: center;
+    padding: 1em;
 }
 
 .content .product-item {
