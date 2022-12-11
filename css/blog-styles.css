@@ -141,6 +141,7 @@ hr {
 
 .summary {
     padding: 15px 0px;
+    text-align: left;
 }
 
 .foot-blog li {
@@ -154,7 +155,8 @@ hr {
 .social-share li {
     margin-right: 25px;
 }
-.pages{
+
+.pages {
     padding-bottom: 20px;
 }
 
@@ -194,6 +196,7 @@ hr {
     text-decoration: none;
     color: #FF8C8C;
 }
+
 /* Tablet: width < 820px */
 @media only screen and (max-width: 820px) {
 
@@ -214,8 +217,9 @@ hr {
         margin: 0px 10px;
 
     }
-    .slide-bar{
-        margin:0px 10px;
+
+    .slide-bar {
+        margin: 0px 10px;
     }
 
     .blog-info a h2 {
@@ -254,12 +258,15 @@ hr {
     .main-content {
         margin: 0px;
     }
-    .category{
+
+    .category {
         margin-right: 10px;
     }
-    .tittle-blog{
+
+    .tittle-blog {
         margin-right: 10px;
     }
+
     .top {
         font-size: 20px;
     }
@@ -279,9 +286,11 @@ hr {
         gap: 10px;
         align-items: flex-start;
     }
-    .summary{
+
+    .summary {
         margin-right: 0px;
     }
+
     .blog-img {
         text-align: left;
         width: 133%;
