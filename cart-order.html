@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cart-styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <title>Thông tin giỏ hàng</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="flex-row-center">
+        <div class="mobile flex-row-center">
+            <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
+            <div class="showNav"><span class="material-icons"> menu </span></div>
+        </div>
+        <div class="flex-row-center gap hide-mobile">
+            <div class="navbar left-header flex-row-center">
+                <ul class="flex-row-center m-auto">
+                    <li><a href="index.html"> Trang Chủ </a></li>
+                    <li><a href="blog.html"> Blog </a></li>
+                    <li><a href="contact.html"> Liên Hệ </a></li>
+                    <li><a href="product-bread.html"> Sản Phẩm </a></li>
+                </ul>
+            </div>
+            <div class="more right-header flex-row-center">
+                <a href="#"><span class="material-icons search"> search </span></a>
+                <a href="user.html"><span class="material-icons user"> person </span></a>
+                <a href="cart.html"><span class="material-icons"> shopping_bag </span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+        <div class="container d-flex">
+            <a href="#" class="nav-link me-1">Trang chủ</a>
+            <span>></span>
+            <a href="#" class="nav-link ms-1">Thông tin đơn hàng</a>
+        </div>
+        <div class="container">
+            <div class="col d-flex justify-content-evenly mt-4 mb-4">
+                <div>
+                    <div class="circle-number m-auto">1</div>
+                    <p>Giỏ hàng</p>
+                </div>
+                <div>
+                    <div class="circle-number-active m-auto">2</div>
+                    <p>Thông tin đơn hàng</p>
+                </div>
+                <div>
+                    <div class="circle-number m-auto">3</div>
+                    <p>Hoàn tất</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="container buy-option">
+                        <div class="form-container">
+                            <div class="slide-controls">
+                                <input type="radio" name="slide" id="login" checked>
+                                <input type="radio" name="slide" id="no-login">
+                                <label for="login" class="slide login">Đăng Nhập</label>
+                                <label for="no-login" class="slide no-login">Mua không đăng ký</label>
+                                <div class="slider-tab"></div>
+                            </div>
+                            <div class="form-inner">
+                                <form action="#" class="login">
+                                    <p>Email đăng nhập</p>
+                                    <div class="field">
+                                        <input type="text" required>
+                                    </div>
+                                    <p>Mật khẩu</p>
+                                    <div class="field">
+                                        <input type="password" required>
+                                    </div>
+                                    <div class="forgot-pass mt-3 mb-3">
+                                        <input type="checkbox" id="remember">
+                                        <label for="remember" class="pl-4">Ghi nhớ đăng nhập | </label>
+                                        <a href="#">Quên Mật Khẩu?</a>
+                                    </div>
+                                    <button class="btn">Đăng nhập</button>
+                                </form>
+                                <form action="#" class="no-login">
+                                    <p>Họ Tên</p>
+                                    <div class="field">
+                                        <input type="text" required>
+                                    </div>
+                                    <p>Số điện thoại</p>
+                                    <div class="field">
+                                        <input type="text" required>
+                                    </div>
+                                    <p>Email</p>
+                                    <div class="field">
+                                        <input type="text" required>
+                                    </div>
+                                    <p>Địa chỉ</p>
+                                    <div class="field">
+                                        <input type="text" required>
+                                    </div>
+                                    <p>Ghi chú</p>
+                                    <div class="field">
+                                        <input type="text">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">SẢN PHẨM</th>
+                                <th scope="col">SL</th>
+                                <th scope="col">TỔNG CỘNG</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white align-middle">
+                            <tr>
+                                <td class="d-flex justify-content-between pt-3 pb-3">
+                                    <img src="/assets/img/cake.png" alt="Cake">
+                                    <span class="m-auto ps-3">Bánh kem sinh nhật vị socola</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>580.000đ</td>
+                            </tr>
+                            <tr class="table-group-divider">
+                                <td class="text-lg-start">Thành tiền:</td>
+                                <td></td>
+                                <td>580.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-start">Giảm giá:</td>
+                                <td></td>
+                                <td>- 0đ</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-start">Phí vận chuyển:</td>
+                                <td></td>
+                                <td>20.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-start">Tổng đơn hàng:</td>
+                                <td></td>
+                                <td class="final-sum">600.000đ</td>
+                            </tr>
+                    </table>
+                    <table class="table table-borderless" id="deliverPolicyTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">CHÍNH SÁCH VẬN CHUYỂN</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white align-middle">
+                            <tr>
+                                <td>
+                                    <span>Áp dụng giao hàng cho tất cả các quận/huyện tại TP. HCM trừ huyện Củ chi, Hóc
+                                        môn, Nhà Bè và Cần Giờ. </span>
+                                </td>
+                            </tr>
+                    </table>
+                    <table class="table table-borderless" id="methodTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">PHƯƠNG THỨC THANH TOÁN</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white purchase-method">
+                            <tr>
+                                <td class="p-3 p-method">
+                                    <input type="radio" id="method1" name="method">
+                                    <label for="method1">Thanh toán trực tiếp khi nhận hàng</label><br>
+                                    <input type="radio" id="method2" name="method">
+                                    <label for="method2">Thanh toán bằng MOMO</label><br>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row action-btn">
+                <div class="col-sm">
+                    <a href="cart.html">
+                        <button type="button" class="btn" id="action-buy-btn">QUAY LẠI</button>
+                    </a>
+                </div>
+                <div class="col-sm action-purchase-col">
+                    <a href="cart-complete.html">
+                        <button type="button" class="btn" id="action-complete-btn">HOÀN TẤT ĐƠN HÀNG</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="flex-column-center">
+        <div class="footer-top grid-four-column">
+            <a href="index.html">Trang Chủ</a>
+            <a href="blog.html">Blog</a>
+            <a href="product-bread.html">Sản Phẩm</a>
+            <a href="contact.html">Liên Hệ</a>
+            <div class="contact-footer">
+                <p class="email">Email: ................</p>
+                <p class="hotline">Hotline: ................</p>
+            </div>
+            <a href="guide.html">Hướng Dẫn Mua Hàng</a>
+            <a href="policy.html">Chính Sách</a>
+            <div class="follow">
+                <span>Follow us:</span>
+                <div class="internet">
+                    <a href=""><img src="assets/img/facebook.png" alt="" /></a>
+                    <a href=""><img src="assets/img/instagram.png" alt="" /></a>
+                    <a href=""><img src="assets/img/youtube.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mid flex-row-center">
+            <div class="mid-left flex-row-center">
+                <span class="material-icons"> contact_mail </span>
+                <div>
+                    <span>ĐĂNG KÝ NHẬN EMAIL</span>
+                    <p>Bạn sẽ luôn nhận được những thông tin khuyến mãi mới và đặc biệt nhất!</p>
+                </div>
+            </div>
+            <div class="mid-right flex-row-center">
+                <input type="email" placeholder="Nhập Email của bạn" />
+                <button><span class="material-icons"> mail </span></button>
+            </div>
+        </div>
+        <p class="footer-bot">© 2022 All Rights Reserved Terms of Use and Privacy Policy</p>
+    </footer>
+    <script src="/js/cart-quantity.js"></script>
+    <script src="/js/cart-buy-option.js"></script>
+</body>
+
+</html>
