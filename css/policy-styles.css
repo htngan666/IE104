@@ -92,6 +92,10 @@ h2 {
     color: #FF8C8C;
 }
 
+.main-content p {
+    text-align: left;
+}
+
 ul {
     list-style: none;
     padding-left: 0px;
@@ -108,6 +112,7 @@ ul {
     font-weight: 700;
     line-height: 60px;
     color: rgba(255, 93, 93, 0.5);
+    margin-bottom: 30px;
 }
 
 .bottom h1 {

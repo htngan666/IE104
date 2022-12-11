@@ -92,10 +92,15 @@ h2 {
     margin: 0 auto;
 }
 
+.main-content p {
+    text-align: left;
+}
+
 .main li p {
     color: rgba(255, 140, 140, 1);
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    text-align: left;
 }
 
 .main li h3 {
