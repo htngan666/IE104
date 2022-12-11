@@ -168,7 +168,7 @@ header {
     }
 
     .gap {
-        gap: 2em;
+        gap: 2em !important;
         flex-direction: column !important;
         padding: 12px 8px;
         width: 100%;
