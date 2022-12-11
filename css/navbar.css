@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.gap {
+    gap: 10em;
+}
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.material-icons:hover {
+    cursor: pointer;
+    color: #ff5252 !important;
+}
+header {
+    padding: 18px 18px;
+    gap: 6em;
+    border-bottom: 1px solid #ff8c8c;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fffae7;
+}
+.left-header {
+    gap: 7em;
+}
+/* Logo style */
+.logo {
+    width: 60px;
+    height: 60px;
+}
+/* Navbar style */
+.navbar {
+    gap: 3em;
+}
+.navbar ul {
+    gap: 3em;
+}
+.navbar a {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #ff8c8c;
+}
+.hide-mobile {
+    display: flex;
+}
+.navbar a:hover {
+    cursor: pointer;
+    color: #ff5252 !important;
+}
+.navbar .search {
+    font-size: 32px;
+    color: #ff8c8c;
+}
+/* More style */
+.more {
+    gap: 14px;
+}
+.more span {
+    font-size: 40px;
+    color: #ff8c8c;
+}
+
+/* Responsive */
+@media (min-width: 64em) {
+    .showNav {
+        display: none;
+    }
+}
+/* tablet responsive */
+@media (max-width: 63.9375em) and (min-width: 39em) {
+    .navbar a {
+        font-size: 16px;
+    }
+    .more span {
+        font-size: 30px;
+        color: #ff8c8c;
+    }
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+    .showNav {
+        display: none;
+    }
+    header {
+        gap: 3em;
+    }
+    .gap {
+        gap: 4em;
+    }
+    .left-header {
+        gap: 2em;
+    }
+    .navbar {
+        gap: 2em;
+    }
+    .navbar ul {
+        gap: 2em;
+    }
+}
+/* Mobile */
+@media (max-width: 39em) {
+    header {
+        padding: 0;
+        gap: 0em;
+        flex-direction: column !important;
+        border-bottom: 0px;
+    }
+    .mobile {
+        width: 100%;
+        gap: 75%;
+        padding: 12px 12px;
+        border-bottom: 1px solid #ff8c8c;
+    }
+    .showNav {
+        font-size: 32px;
+        color: #ff8c8c;
+    }
+    .gap {
+        gap: 2em;
+        flex-direction: column !important;
+        padding: 12px 8px;
+        width: 100%;
+        background-color: #fffae7;
+        border-bottom: 1px solid #ff8c8c;
+    }
+    .navbar ul {
+        flex-direction: column !important;
+        gap: 1em;
+    }
+    .hide-mobile {
+        display: none !important;
+    }
+}
